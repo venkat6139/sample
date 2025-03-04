@@ -7,10 +7,6 @@ const Form = ({ onPredict }) => {
         age: "",
         sex: "",
         cp: "",
-        trestbps: "",
-        chol: "",
-        fbs: "",
-        restecg: "",
         thalach: "",
         exang: "",
         oldpeak: "",
@@ -32,7 +28,7 @@ const Form = ({ onPredict }) => {
 
     return (
         <form className="prediction-form" onSubmit={handleSubmit}>
-            <h2>Enter Patient Details</h2>
+            <h2 className="main-heading">Enter Patient Details</h2>
 
             <div className="input-group">
                 <label>Age:</label>
@@ -40,7 +36,7 @@ const Form = ({ onPredict }) => {
             </div>
 
             <div className="input-group">
-                <label>Sex (0 = Female, 1 = Male):</label>
+                <label>Gender (0 = Female, 1 = Male):</label>
                 <select name="sex" value={formData.sex} onChange={handleChange} required>
                     <option value="">Select</option>
                     <option value="0">Female</option>
@@ -58,36 +54,6 @@ const Form = ({ onPredict }) => {
                     <option value="4">Asymptomatic</option>
                 </select>
             </div>
-
-            <div className="input-group">
-                <label>Resting Blood Pressure (mm Hg):</label>
-                <input type="number" name="trestbps" value={formData.trestbps} onChange={handleChange} required />
-            </div>
-
-            <div className="input-group">
-                <label>Cholesterol (mg/dL):</label>
-                <input type="number" name="chol" value={formData.chol} onChange={handleChange} required />
-            </div>
-
-            <div className="input-group">
-                <label>Fasting Blood Sugar ( 120 mg/dL):</label>
-                <select name="fbs" value={formData.fbs} onChange={handleChange} required>
-                    <option value="">Select</option>
-                    <option value="0">False</option>
-                    <option value="1">True</option>
-                </select>
-            </div>
-
-            <div className="input-group">
-                <label>Resting ECG (0-2):</label>
-                <select name="restecg" value={formData.restecg} onChange={handleChange} required>
-                    <option value="">Select</option>
-                    <option value="0">Normal</option>
-                    <option value="1">ST-T Wave Abnormality</option>
-                    <option value="2">Left Ventricular Hypertrophy</option>
-                </select>
-            </div>
-
             <div className="input-group">
                 <label>Max Heart Rate Achieved:</label>
                 <input type="number" name="thalach" value={formData.thalach} onChange={handleChange} required />

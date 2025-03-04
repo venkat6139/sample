@@ -1,13 +1,46 @@
 .prediction-result {
-    margin-top: 20px;
-    font-size: 18px;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
     font-weight: bold;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.heading{
+    color: rgb(44, 43, 43);
 }
 
 .safe {
-    color: green;
+    color: #2ecc71;
 }
 
 .risk {
-    color: red;
+    color: #e74c3c;
 }
+
+.precautions-text {
+    font-size: 16px;
+    color: #ff5722;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.ok-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ok-btn:hover {
+    background-color: #218838;
+}
+

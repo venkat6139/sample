@@ -1,9 +1,20 @@
-.app-container {
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url('https://img.freepik.com/free-vector/abstract-blue-background-with-medical-elements-health-care-concept_1302-5643.jpg?ga=GA1.1.1164823487.1738854625&semt=ais_incoming');
+  background-size: cover;
+  background-position: center;
+  color: white;
   text-align: center;
-  padding: 20px;
-  font-family: Arial, sans-serif;
+}
+
+.app-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 40px;
 }
 
 h1 {
-  color: #333;
+  color: rgb(75, 77, 76);
+  font-size: 28px;
+  margin-bottom: 20px;
 }

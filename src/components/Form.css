@@ -1,39 +1,179 @@
-.prediction-form {
-    max-width: 400px;
-    margin: auto;
-    background: #f9f9f9;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+/* .prediction-form {
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.heading{
+    color: #00daf7;
 }
 
 .input-group {
     margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
     text-align: left;
 }
 
-.input-group label {
-    display: block;
-    font-weight: bold;
+input, select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    outline: none;
+    transition: border 0.3s;
 }
 
-.input-group input {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+input:focus, select:focus {
+    border-color: #007bff;
 }
 
 .predict-btn {
     width: 100%;
-    padding: 10px;
-    background-color: #007bff;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #02a2d3;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
+    transition: background 0.3s;
 }
 
 .predict-btn:hover {
-    background-color: #0056b3;
+    background-color: #02c95b;
 }
+
+/* Responsive Styles */
+/* @media (max-width: 600px) {
+    .prediction-form {
+        width: 90%;
+        padding: 20px;
+    }
+}  */
+
+/* Form Container */
+/* .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #02a2d3, #00daf7);
+    padding: 20px;
+}
+
+/* Form Styles */
+.prediction-form {
+    max-width: 500px;
+    width: 100%;
+    padding: 30px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(12px);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Heading */
+.main-heading {
+    text-align: center;
+    color: #007bff;
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Input Groups */
+.input-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 6px;
+    color: #222;
+    font-size: 14px;
+}
+
+input, select {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s, box-shadow 0.3s;
+    background-color: #f9f9f9;
+    appearance: none; /* Remove browser-specific styles */
+    -webkit-appearance: none; /* Safari fix */
+    -moz-appearance: none; /* Firefox fix */
+    height: 42px; /* Ensures both have the same height */
+    box-sizing: border-box; /* Prevents size inconsistencies */
+}
+
+input:focus, select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Predict Button */
+.predict-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #02a2d3, #02c95b);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.3s, background 0.3s;
+}
+
+.predict-btn:hover {
+    background: linear-gradient(135deg, #02c95b, #007bff);
+    transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .prediction-form {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .main-heading {
+        font-size: 20px;
+    }
+
+    input, select {
+        font-size: 14px;
+    }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 
